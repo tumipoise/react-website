@@ -2,17 +2,17 @@ import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/pages/Home.js";
 
 function App() {
   return (
     <>
       <Router>
-        <div className="App">
-          <Navbar />
-          <Routes>
-            <Route path="/" exact />
-          </Routes>
-        </div>
+        <Navbar />
+        <Routes>
+          <Route path="/" exact />
+        </Routes>
+        <Home />
       </Router>
     </>
   );
